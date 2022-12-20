@@ -1,0 +1,40 @@
+//var eNo = 0;
+var tbody = document.getElementById('tbody1');
+
+function AddItemsToTable(ename, eid) {
+    let trow = document.createElement("trow");
+    let td1 = document.createElement('td');
+    let td2 = document.createElement('td');
+
+    td1.innerHTML = ename;
+    td2.innerHTML = eid;
+
+    trow.appendChild(td1);
+    trow.appendChild(td2);
+
+    tbody.appendChild(trow);
+}
+
+function AddAllItemsToTable(TheExam) {
+    tbody.innerHTML = "";
+    TheExam.forEach(element => {
+        AddItemsToTable(element.ename, element.eid)
+    });
+}
+
+function GetAllDataOnce() {
+    const dbRef = ref(db);
+    get(child(dbRef, "exams"))
+        .then((snapshot) => {
+            var exams = [];
+
+            snapshot.forEach(examSnapshot => {
+                exams.push(examSnapshot.val());
+                exams.push(examSnapshot.key());
+            });
+
+            AddAllItemsToTable(exams);
+        })
+}
+
+window.onload = GetAllDataOnce;

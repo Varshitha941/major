@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<head>
+    <title> Manage Exams </title>
+</head>
+
+<style>
+    body {
+        background-color: rgb(210, 197, 178);
+    }
+    
+    .heading {
+        background-color: rgb(101, 65, 11);
+        text-align: center;
+        margin: auto;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+        margin-top: 3%;
+    }
+    
+    .box {
+        text-align: left;
+        font-size: 1.5rem;
+        margin: 2px;
+        margin: auto;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    }
+    
+    button {
+        color: black;
+        font-size: 1.5rem;
+        border: 2px solid black;
+        padding: 10px;
+        margin: 10px;
+        background-color: rgb(118, 187, 227);
+        margin-bottom: 30px;
+        flex-direction: column;
+    }
+</style>
+
+<body>
+    <div class="heading">
+        <h1> Manage Exams </h1>
+    </div>
+
+
+
+    <div class="box">
+        <center>
+            <button onclick="location.href='create_exam.html'">CREATE EXAM</button>
+            <button onclick="location.href='home.html'">GO BACK HOME</button>
+        </center>
+
+        <div id="exam"></div>
+
+
+
+
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js "></script>
+    <script src="manage_exams.js "></script>
+</body>
+
+</html>

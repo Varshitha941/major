@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<head>
+    <title> Create Exam </title>
+</head>
+
+<style>
+    body {
+        background-color: rgb(210, 197, 178);
+    }
+    
+    .heading {
+        background-color: rgb(101, 65, 11);
+        text-align: center;
+        margin: auto;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+        margin-top: 3%;
+    }
+    
+    .box {
+        text-align: left;
+        font-size: 1.5rem;
+        margin: 2px;
+        background-color: rgb(214, 152, 114);
+        width: 50%;
+        margin: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    }
+    
+    button {
+        color: black;
+        font-size: 1.5rem;
+        border: 2px solid black;
+        padding: 10px;
+        margin: 10px;
+        background-color: rgb(118, 187, 227);
+    }
+</style>
+
+<body>
+    <div class="heading">
+        <h1> Create Exam </h1>
+    </div>
+
+
+
+    <div class="box">
+        <form action="" id="createxam">
+            <label for="ename">Exam name:</label>
+            <input type="text" id="ename" name="ename" style="width: 40%;">
+            <br><br>
+            <label for="reg_stu_data">Upload Registered Students Data: </label>
+            <input type="file" id="reg_stu_data" name="reg_stu_data">
+            <br><br>
+
+
+            <center>
+                <button type="submit" onclick="location.href='manage_exams.html'">CREATE EXAM</button>
+            </center>
+        </form>
+
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js "></script>
+    <script src="create_exam.js "></script>
+</body>
+
+</html>

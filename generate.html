@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<head>
+    <title> Genarate Report </title>
+</head>
+
+<style>
+    body {
+        background-color: rgb(210, 197, 178);
+    }
+    
+    .heading {
+        background-color: rgb(101, 65, 11);
+        text-align: center;
+        margin: auto;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+        margin-top: 3%;
+    }
+    
+    .box {
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 2px;
+        background-color: rgb(214, 152, 114);
+        width: 50%;
+        margin: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    }
+    
+    button {
+        color: black;
+        font-size: 1.5rem;
+        border: 2px solid black;
+        padding: 10px;
+        margin: 10px;
+        background-color: rgb(118, 187, 227);
+    }
+    
+    select {
+        font-size: 20px;
+    }
+</style>
+
+<body>
+    <div class="heading">
+        <h1> Genarate Reports </h1>
+    </div>
+
+
+
+    <div class="box">
+        <label for="Choose exam:">Choose a exam:</label>
+
+        <select name="exam" id="exam">
+            <option value="select">Select</option>
+            <option value="III B.TECH. II SEMESTER (R19) REGULAR JUL-2022">III B.TECH. II SEMESTER (R19) REGULAR JUL-2022</option>
+            <option value="II B.TECH. II SEMESTER (R20) REGULAR JUN-2022">II B.TECH. II SEMESTER (R20) REGULAR JUN-2022</option>
+            <option value="III B.TECH. I SEMESTER (R19) SUPPLEMENTARY MAY-2022">III B.TECH. I SEMESTER (R19) SUPPLEMENTARY MAY-2022</option>
+            <option value="III B.TECH. II SEMESTER (R18) REGULAR JUL-2022">III B.TECH. II SEMESTER (R18) REGULAR JUL-2022</option>
+            <option value="II B.TECH. I SEMESTER (R20) REGULAR JUN-2022">II B.TECH. I SEMESTER (R20) REGULAR JUN-2022</option>
+            <option value="II B.TECH. I SEMESTER (R18) SUPPLEMENTARY AUG-2022">II B.TECH. I SEMESTER (R18) SUPPLEMENTARY AUG-2022</option>
+        </select>
+        <br><br>
+
+        <button onclick="location.href='report.html'"> GENERATE REPORT</button>
+    </div>
+
+</body>
+
+</html>
